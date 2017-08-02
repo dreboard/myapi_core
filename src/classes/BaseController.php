@@ -1,8 +1,6 @@
 <?php
 namespace MyApiCore\System;
 
-use \Interop\Container\ContainerInterface as ContainerInterface;
-
 /**
  * Class BaseController
  * @package MyApiCore\System
