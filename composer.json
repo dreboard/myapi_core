@@ -25,9 +25,12 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">=7.0.0",
-    "slim/slim": "^3.7"
+    "slim/slim": "^3.7",
+    "monolog/monolog": "1.23.*",
+    "wazaari/monolog-mysql": "1.0.0",
+    "phpmailer/phpmailer": "~5.2"
   },
   "autoload": {
-    "psr-4": { "MyApiCore\\System\\": ["src/classes", "src/interfaces", "src/traits"] }
+    "psr-4": { "MyApiCore\\System\\": ["src/classes", "src/classes/loggers", "src/interfaces", "src/traits"] }
   }
 }
