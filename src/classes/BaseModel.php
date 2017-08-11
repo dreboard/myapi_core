@@ -34,7 +34,7 @@ class BaseModel {
 	 * @param $dsn
 	 */
 	public function __construct() {
-		$this->config = require __DIR__.'/../src/settings.php';
+		$this->config = require 'settings.php';
         try{
             $this->db = new \PDO(
                 "mysql:host={$this->config['settings']['db']['host']};dbname={$this->config['settings']['db']['database']}",
